@@ -70,7 +70,7 @@ body {
    margin: 0 auto;
    border: 1px solid #999999;
    border-radius: 10px;
-   background: #ffffff;
+   background: #000000;
    font-family: "Open Sans";
    transition: .3s ease;
    overflow: hidden;
@@ -80,7 +80,7 @@ body {
    width: 100%;
 }
 .product-list {
-   background: #cccccc;
+   background: #000000;
    padding: 15px 0;
 }
 .product-list h3 {

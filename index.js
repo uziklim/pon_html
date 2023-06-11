@@ -121,7 +121,7 @@ function addClickListeners(elements, callback) {
 function createProduct(product) {
 	return {
 		id: product.id,
-		name: product.name ? product.name : 'Имя неизвестно',
+		name: product.name ? product.name : 'no name',
 		price: product.price ? product.price : null,
 		imgSrc: product.imgSrc ? product.imgSrc : 'goods/default.png',
 	};
@@ -166,7 +166,7 @@ function renderGoods() {
 		const product = createProduct(GOODS[i]);
 
 		const price = product.price === null
-			? '<p>Товар закончился</p>'
+			? '<p>the end</p>'
 			: `<p class="price">₽ ${product.price}</p>`;
 
 		const productBlock = document.createElement('div');
@@ -184,7 +184,7 @@ function renderGoods() {
 
 			const button = document.createElement('button');
 			button.className = 'button';
-			button.textContent = 'В корзину';
+			button.textContent = 'buy';
 			button.addEventListener('click', clickHander);
 
 			productBlock.querySelector('.product-list').append(button);
